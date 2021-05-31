@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import AnimeCard from './AnimeCard'
 import {connect} from 'react-redux'
+import fetchAnimes from '../actions/fetchAnimes'
 
 export default class AnimeContainer extends Component {
     componentDidMount() {
@@ -15,6 +16,8 @@ export default class AnimeContainer extends Component {
         )
     }
 }
+
+export default connect(null, {fetchAnimes})(AnimeContainer)
 
 //holds anime cards
 // fetch all anime
