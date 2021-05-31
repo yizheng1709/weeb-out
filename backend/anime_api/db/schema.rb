@@ -10,13 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_31_020059) do
+ActiveRecord::Schema.define(version: 2021_05_31_211919) do
 
   create_table "animes", force: :cascade do |t|
     t.string "title"
     t.text "summary"
     t.string "cover"
     t.string "tags"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.integer "anime_id"
+    t.text "content"
+    t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
