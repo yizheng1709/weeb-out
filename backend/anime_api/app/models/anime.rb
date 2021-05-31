@@ -1,0 +1,2 @@
+class Anime < ApplicationRecord
+end

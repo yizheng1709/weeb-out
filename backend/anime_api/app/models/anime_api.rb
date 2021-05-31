@@ -27,5 +27,6 @@ array_of_anime_links.map do |card|
     profile = Nokogiri::HTML(URI.open(card[:profile]))
     summary = profile.css(".entrySynopsis").css("p").text
     cover = profile.css("img.screenshots").attribute("src").value.prepend("https://www.anime-planet.com")
+    tags_and_content_warnings = profile.css("div.tags").css("ul").text.strip.split("\n\n\n\n\n").map{|e| e.gsub(/[,]/, "")}.map{|e| e.strip}
     binding.pry
 end
