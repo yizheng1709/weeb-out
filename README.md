@@ -1,4 +1,4 @@
-# Weeb Out
+# Weeb Out Frontend
 
 ![Alt text](src/images/weebbanner.png?raw=true "Weeb Out Banner")
 
