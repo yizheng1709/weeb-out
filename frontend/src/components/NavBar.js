@@ -1,11 +1,12 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import '../stylesheets/navbar.css'
 
 class NavBar extends React.Component {
 
     render() {
         return(
-            <div>
+            <div className="navbar">
                 < NavLink 
                 style={{ marginRight: '10px' }}
                 to="/">
@@ -13,8 +14,8 @@ class NavBar extends React.Component {
                 </ NavLink >
                 < NavLink 
                 style={{ marginRight: '10px' }}
-                to="/movies">
-                    Logout
+                to="/animes">
+                    All Animes
                 </ NavLink >
                 
             </div>
