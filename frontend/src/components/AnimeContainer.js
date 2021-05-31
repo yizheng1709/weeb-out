@@ -9,3 +9,6 @@ export default class AnimeContainer extends Component {
         )
     }
 }
+
+//holds anime cards
+// fetch all anime
