@@ -11,12 +11,12 @@ class NavBar extends React.Component {
                 < NavLink 
                 
                 to="/">
-                    Home
+                    <span className="right-spacing nav-font">Home</span>
                 </ NavLink >
                 < NavLink 
                
                 to="/animes">
-                    All Animes
+                    <span className="right-spacing nav-font">All Animes</span>
                 </ NavLink >
                 
             </div>

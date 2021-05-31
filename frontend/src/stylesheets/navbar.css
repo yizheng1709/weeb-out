@@ -1,7 +1,13 @@
 .navbar {
-    margin-right: 10px;
     text-align: center;
     justify-content: center;
-    border: 2px outset black;
     width: auto;
+    border: 6px outset rgb(106, 157, 251);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
+
+.nav-font {
+    font-size: 25px;
+}
+

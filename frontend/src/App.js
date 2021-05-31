@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom';
 import NavBar from './components/NavBar'
 import Banner from './components/Banner'
+import HomePage from './components/HomePage'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <NavBar />
         <Route exact path="/" render={() => <div>Home</div>} />
     </div>
+    <HomePage/>
     </Router>
     </>
   );

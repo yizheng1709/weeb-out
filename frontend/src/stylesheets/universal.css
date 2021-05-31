@@ -3,3 +3,7 @@
     max-height: 100vh;
     margin: auto;
 }
+
+.right-spacing {
+    margin-right: 13px;
+}
