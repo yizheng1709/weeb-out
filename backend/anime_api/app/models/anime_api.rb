@@ -1,25 +1,31 @@
-require 'uri'
-require 'net/http'
-require 'openssl'
+require 'nokogiri'
+require 'open-uri'
 require 'pry'
-require 'httparty'
 
-# url = URI("https://anilistmikilior1v1.p.rapidapi.com/getAnimeList")
 
-# http = Net::HTTP.new(url.host, url.port)
-# http.use_ssl = true
-# http.verify_mode = OpenSSL::SSL::VERIFY_NONE
-
-# request = Net::HTTP::Post.new(url)
-# request["content-type"] = 'application/x-www-form-urlencoded'
-# request["x-rapidapi-key"] = 'd3be911c4emsh88c6435113780e4p1dc347jsncad39a94bf6b'
-# request["x-rapidapi-host"] = 'Anilistmikilior1V1.p.rapidapi.com'
-# request.body = "accessToken=%3CREQUIRED%3E&userId=weebout"
-
-# response = http.request(request)
+## get an ar
+page = 1
+array_of_anime_links = []
+while page != 2
+    doc = Nokogiri::HTML(URI.open("https://www.anime-planet.com/anime/all?page=" + page.to_s))
+    doc2 = doc.css("ul.cardDeck.cardGrid").children
+    doc2.each do |card|
+        if card.css("a").attribute("href")
+            # binding.pry
+            hash = {
+                :profile => card.css("a").attribute("href").value.prepend("https://www.anime-planet.com")
+            }
+            array_of_anime_links << hash
+        end
+    end
+    page += 1
+end 
 # binding.pry
-# puts response.read_body
+array_of_anime_links.shift
 
-response = HTTParty.get("https://anilistmikilior1v1.p.rapidapi.com/getAnimeList?rapidapi-key=")
-binding.pry
-puts response 
+array_of_anime_links.map do |card|
+    profile = Nokogiri::HTML(URI.open(card[:profile]))
+    summary = profile.css(".entrySynopsis").css("p").text
+    cover = profile.css("img.screenshots").attribute("src").value.prepend("https://www.anime-planet.com")
+    binding.pry
+end
