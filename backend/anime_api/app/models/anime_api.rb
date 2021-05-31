@@ -2,11 +2,9 @@ require 'nokogiri'
 require 'open-uri'
 require 'pry'
 
-
-## get an ar
 page = 1
 array_of_anime_links = []
-while page != 2
+while page != 5
     doc = Nokogiri::HTML(URI.open("https://www.anime-planet.com/anime/all?page=" + page.to_s))
     doc2 = doc.css("ul.cardDeck.cardGrid").children
     doc2.each do |card|
