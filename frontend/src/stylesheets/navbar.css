@@ -2,4 +2,6 @@
     margin-right: 10px;
     text-align: center;
     justify-content: center;
+    border: 2px outset black;
+    width: auto;
 }
