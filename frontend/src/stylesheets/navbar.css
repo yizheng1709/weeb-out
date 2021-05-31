@@ -9,5 +9,15 @@
 
 .nav-font {
     font-size: 25px;
+    font-family: 'Pattaya', sans-serif;
+    color: royalblue
+}
+
+.nav-font:hover {
+    color:rgb(129, 173, 255)
+}
+
+a {
+    text-decoration: none;
 }
 
