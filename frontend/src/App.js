@@ -14,9 +14,9 @@ function App() {
     <Router>
     <div className="App">    
         <NavBar />
-        <Route exact path="/" render={() => <div>Home</div>} />
+        <Route exact path="/" render={() => <div>Home<HomePage/></div>} />
     </div>
-    <HomePage/>
+    
     </Router>
     </>
   );
