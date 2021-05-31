@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Weeb Out Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Alt text](src/images/weebbanner.png?raw=true "Weeb Out Banner")
 
 ## Available Scripts
 
