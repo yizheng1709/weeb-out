@@ -7,3 +7,5 @@ export default function AnimePage() {
         </div>
     )
 }
+
+//show page for each anime

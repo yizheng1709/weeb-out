@@ -1,5 +1,6 @@
 import React from 'react'
 import '../stylesheets/history.css'
+import HistoryGallery from './HistoryGallery'
 
 export default function AnimeHistory() {
     return (
@@ -90,7 +91,12 @@ export default function AnimeHistory() {
 
             <br></br><br></br><br></br>
             <br></br><br></br><br></br>
-            <br></br><br></br><br></br>    
+
+            <HistoryGallery></HistoryGallery>
+
+            <br></br><br></br><br></br>   
+            <br></br><br></br><br></br>
+            <br></br><br></br><br></br>     
         </div>
     )
 }
