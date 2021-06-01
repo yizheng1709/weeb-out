@@ -11,15 +11,23 @@ class AnimeContainer extends Component {
     // } data is coming out perfectly
 
     render() {
+        let cards = this.props.animes.map(anime => <AnimeCard anime={anime}/> )
         return (
             <div>
                 hi. this is the animecontainer
+                
             </div>
         )
     }
 }
 
-export default connect(null, {fetchAnimes})(AnimeContainer)
+const mapStateToProps = state => {
+    return({
+        animes: state.animes
+    })
+}
+
+export default connect(mapStateToProps, {fetchAnimes})(AnimeContainer)
 
 //holds anime cards
 // fetch all anime
