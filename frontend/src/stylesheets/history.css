@@ -1,5 +1,5 @@
 .history-div {
-    max-width: 600px;
+    max-width: 800px;
     justify-content: center;
     text-align: center;
     display: block;
@@ -8,11 +8,31 @@
 }
 
 .history-title {
-    font-size: 45px;
+    font-size: 55px;
     font-family: 'Pattaya', sans-serif;
     color: royalblue
 }
 
+.history-title:hover{
+    color: rgb(131, 95, 214);
+}
+
 .wiki-line {
     font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.summary {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 21px;
+    color: rgb(58, 71, 182)
+}
+
+a {
+    color: rgb(131, 95, 214);
+    font-weight: bold;
+}
+
+a:hover{
+    color: rgb(226, 138, 189)
 }

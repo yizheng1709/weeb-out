@@ -9,9 +9,9 @@ export default function AnimeHistory() {
             <br></br>
             <br></br>
 
-            <span>
+            <span className="summary">
 
-            Anime (Japanese: アニメ) is hand-drawn and computer animation originating from Japan. 
+            Anime is hand-drawn and computer animation originating from Japan. 
             
             In Japan and in Japanese, anime (a term derived from the English word animation) describes all animated works, regardless of style or origin. 
             
@@ -25,7 +25,7 @@ export default function AnimeHistory() {
 
             <br></br><br></br><br></br>
 
-            <span>
+            <span className="summary">
 
             The earliest commercial Japanese animations date to 1917. 
             
@@ -51,7 +51,7 @@ export default function AnimeHistory() {
 
             <br></br><br></br><br></br>
 
-            <span>
+            <span className="summary">
 
             Anime is a diverse medium with distinctive production methods that have adapted in response to emergent technologies. 
             
@@ -65,7 +65,7 @@ export default function AnimeHistory() {
             
             <br></br><br></br><br></br>
 
-            <span>
+            <span className="summary">
             
             The anime industry consists of over 
             
