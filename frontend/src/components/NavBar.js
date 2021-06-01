@@ -3,11 +3,9 @@ import { NavLink } from 'react-router-dom'
 import '../stylesheets/navbar.css'
 import '../stylesheets/universal.css'
 
-class NavBar extends React.Component {
-
-    render() {
-        return(
-            <div className="navbar">
+export default function NavBar() {
+    return (
+        <div className="navbar">
                 < NavLink 
                 
                 to="/">
@@ -23,10 +21,6 @@ class NavBar extends React.Component {
                 to="/history">
                     <span className="right-spacing nav-font">Anime History</span>
                 </ NavLink >
-                
-            </div>
-        )
-    }
+        </div>
+    )
 }
-
-export default NavBar
