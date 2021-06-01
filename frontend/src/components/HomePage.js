@@ -8,7 +8,7 @@ export default function HomePage() {
     return (
         <>
         <Route exact path="/home"></Route>
-           <img src={choosing} className="center-fit homepage"></img> 
+           <img src={choosing} alt="choosing" className="center-fit homepage"></img> 
         </>
     )
 }

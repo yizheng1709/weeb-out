@@ -5,6 +5,6 @@ import '../stylesheets/universal.css'
 
 export default function Banner() {
     return (
-            <img src={logo} className="logo center-fit"></img>
+            <img src={logo} alt="logo" className="logo center-fit"></img>
     )
 }

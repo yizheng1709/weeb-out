@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Review() {
+export default function AnimePage() {
     return (
         <div>
-            
+            this is the anime page
         </div>
     )
 }

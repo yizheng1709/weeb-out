@@ -3,15 +3,17 @@ import AnimeCard from './AnimeCard'
 import {connect} from 'react-redux'
 import fetchAnimes from '../actions/fetchAnimes'
 
-export default class AnimeContainer extends Component {
-    componentDidMount() {
-        fetch("http://localhost:3000/animes")
+class AnimeContainer extends Component {
+    // componentDidMount() {
+    //     fetch("http://localhost:3000/animes")
+    //     .then(resp => resp.json())
+    //     .then(resp => console.log(resp))
+    // } data is coming out perfectly
 
-    }
     render() {
         return (
             <div>
-                
+                hi. this is the animecontainer
             </div>
         )
     }
