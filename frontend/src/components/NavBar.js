@@ -18,6 +18,11 @@ class NavBar extends React.Component {
                 to="/animes">
                     <span className="right-spacing nav-font">All Animes</span>
                 </ NavLink >
+                < NavLink 
+                
+                to="/history">
+                    <span className="right-spacing nav-font">Anime History</span>
+                </ NavLink >
                 
             </div>
         )
