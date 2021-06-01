@@ -7,6 +7,7 @@ import NavBar from './components/NavBar'
 import Banner from './components/Banner'
 import HomePage from './components/HomePage'
 import AnimeContainer from './components/AnimeContainer';
+import AnimeHistory from './components/AnimeHistory'
 
 function App() {
   return (
