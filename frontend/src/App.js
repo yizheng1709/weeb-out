@@ -17,7 +17,7 @@ function App() {
     <div className="App">    
         <NavBar />
         <br/>
-        <Route exact path="/" render={() => <div>Home<HomePage/></div>} />
+        <Route exact path="/" render={() => <div><HomePage/></div>} />
         <Route exact path="/animes" render={() => <AnimeContainer/>} />
         <Route exact path="/history" render={() => <AnimeHistory/>} />
         <Route path="/animes/:id" render={ routerProps => <AnimePageContainer {...routerProps} />} />

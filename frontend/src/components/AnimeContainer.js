@@ -11,10 +11,9 @@ class AnimeContainer extends Component {
     }
 
     render() {
-        let cards = this.props.animes.map(anime => <AnimeCard key={anime.id} anime={anime}/> )
         return (
             <div className="anime-grid">
-                {cards}
+                {this.props.animes && this.props.animes.map(anime => <AnimeCard key={anime.id} anime={anime}/> )}
             </div>
         )
     }

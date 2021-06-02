@@ -13,7 +13,9 @@
     padding-left: 200px;
     display: grid;
     grid-template-columns: auto auto;
+    column-gap: 30px;
 }
+
 
 .page-font {
     font-family: 'Quicksand', sans-serif;
@@ -53,8 +55,8 @@
 }
 
 .cover {
-    height: 600px;
-    width: 460px;
+    max-width: 100%;
+    max-height: 100vh;
     border-radius: 25px;
     box-shadow: 3px 4px 9px 6px #c9cbcf;
 }

@@ -9,10 +9,12 @@ class CommentsController < ApplicationController
     # end
 
     def create 
-        comment = Comment.new(comment_params)
-        if comment.save 
-            render json: comment, only: [:anime_id, :content, :name, :id]
-        end
+        # binding.pry
+        comment = @anime.comments.create(comment_params)
+        # if comment.save 
+        render json: comment, only: [:anime_id, :content, :name, :id]
+        # render json: @anime, only[:id, :title, :summary, :cover, :tags], include: [:comments]
+        # end
     end
 
     private 

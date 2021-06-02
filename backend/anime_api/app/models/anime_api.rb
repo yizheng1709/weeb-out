@@ -26,6 +26,15 @@ array_of_anime_links.map do |card|
     title = profile.css("h1").text
     summary = profile.css(".entrySynopsis").css("p").text
     cover = profile.css("img.screenshots").attribute("src").value.prepend("https://www.anime-planet.com")
-    binding.pry
     tags_and_content_warnings = profile.css("div.tags").css("ul").text.strip.split("\n\n\n\n\n").map{|e| e.gsub(/[,]/, "")}.map{|e| e.strip}.join(", ")
+    
+    array_of_comments = profile.css("a.ShortReview").children.text.split("\n\n\n\n\n\n")
+    array_of_comments.each do |comment|
+        comment_array = comment.strip.split("\n")
+        user = comment_array[0]
+        comment_array.delete_if {|ele| ele.length < 14}
+        comment_array = comment_array.join(" ")
+        binding.pry
+
+    end
 end

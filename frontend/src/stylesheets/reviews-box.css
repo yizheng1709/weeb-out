@@ -3,3 +3,10 @@
     border: 8px groove rgb(212, 223, 255);
     padding-bottom: 34px;
 }
+
+.reviews-title {
+    font-size: 43px;
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: underline;
+    color: rgb(58, 95, 182);
+}

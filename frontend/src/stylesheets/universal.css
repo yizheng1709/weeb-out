@@ -7,3 +7,9 @@
 .right-spacing {
     margin-right: 27px;
 }
+
+.responsive {
+    width: 100%;
+    height: auto;
+    
+}
