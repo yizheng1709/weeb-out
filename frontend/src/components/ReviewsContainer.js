@@ -6,7 +6,6 @@ import '../stylesheets/reviews-box.css'
 export default class ReviewsContainer extends Component {
 
     render() {
-        // debugger
                 
         return (
             <>

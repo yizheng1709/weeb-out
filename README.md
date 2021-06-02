@@ -16,6 +16,7 @@ git clone <link to this repo>
 ```
 
 The backend of this single page application runs on a Rails API. Move down to the anime_api directory.
+I do not recommend dropping the database as it was done with scraping and due to HTTP request limit, it has to be done page by page. However, the seeds.rb file will allow you to scrape more anime if needed.
 
 ```
 cd backend/anime_api

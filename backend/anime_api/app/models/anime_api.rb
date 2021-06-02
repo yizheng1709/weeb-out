@@ -9,7 +9,6 @@ while page != 2
     doc2 = doc.css("ul.cardDeck.cardGrid").children
     doc2.each do |card|
         if card.css("a").attribute("href")
-            # binding.pry
             hash = {
                 :profile => card.css("a").attribute("href").value.prepend("https://www.anime-planet.com")
             }
@@ -18,8 +17,6 @@ while page != 2
     end
     page += 1
 end 
-# binding.pry
-# array_of_anime_links.shift
 
 array_of_anime_links.map do |card|
     profile = Nokogiri::HTML(URI.open(card[:profile]))

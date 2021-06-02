@@ -4,8 +4,4 @@ class AnimesController < ApplicationController
         render json: animes, only: [:id, :title, :summary, :cover, :tags], include: [:comments]
     end
     
-    # def show 
-    #     anime = Anime.find_by_id(params[:id])
-    #     render json: anime, only: [:id, :title, :summary, :cover, :tags], include: [:comments]
-    # end
 end
