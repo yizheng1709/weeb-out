@@ -1,12 +1,12 @@
 class CommentsController < ApplicationController
     before_action :set_anime
 
-    def index 
-        if params["anime_id"]
-            comments = @anime.comments
-            render json: comments, only: [:anime_id, :content, :name, :id]
-        end
-    end
+    # def index 
+    #     if params["anime_id"]
+    #         comments = @anime.comments
+    #         render json: comments, only: [:anime_id, :content, :name, :id]
+    #     end
+    # end
 
     def create 
         comment = Comment.new(comment_params)

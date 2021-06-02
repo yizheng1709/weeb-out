@@ -2,32 +2,29 @@ import React, { Component } from 'react'
 import AnimeCard from './AnimeCard'
 import {connect} from 'react-redux'
 import fetchAnimes from '../actions/fetchAnimes'
+import '../stylesheets/anime-container.css'
 
 class AnimeContainer extends Component {
-    // componentDidMount() {
-    //     fetch("http://localhost:3000/animes")
-    //     .then(resp => resp.json())
-    //     .then(resp => console.log(resp))
-    // } data is coming out perfectly
+
+    componentDidMount() {
+        this.props.fetchAnimes()
+    }
 
     render() {
-        let cards = this.props.animes.map(anime => <AnimeCard anime={anime}/> )
+        let cards = this.props.animes.map(anime => <AnimeCard key={anime.id} anime={anime}/> )
         return (
-            <div>
-                hi. this is the animecontainer
-                
+            <div className="anime-grid">
+                {cards}
             </div>
         )
     }
 }
 
 const mapStateToProps = state => {
+    console.log("mapStateToProps")
     return({
         animes: state.animes
     })
 }
 
-export default connect(mapStateToProps, {fetchAnimes})(AnimeContainer)
-
-//holds anime cards
-// fetch all anime
+export default connect( mapStateToProps, {fetchAnimes} )(AnimeContainer)

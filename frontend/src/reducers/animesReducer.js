@@ -5,6 +5,8 @@ export default function animesReducer (state = {animes: [] }, action) {
     switch(action.type){
         case "ADD_REVIEW":
             return(state)
+        case "FETCH_ANIMES":
+            return {animes: action.payload}
         default:
             return state 
     }

@@ -15,9 +15,11 @@ function App() {
     <Router>
     <div className="App">    
         <NavBar />
+        <br/>
         <Route exact path="/" render={() => <div>Home<HomePage/></div>} />
         <Route exact path="/animes" render={() => <AnimeContainer/>} />
         <Route exact path="/history" render={() => <AnimeHistory/>} />
+        <br/><br/><br/>
     </div>
     
     </Router>
