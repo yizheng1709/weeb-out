@@ -1,16 +1,31 @@
 import React from 'react'
 import AnimePage from './AnimePage'
 import CommentForm from './CommentForm'
+import fetchOneAnime from '../actions/fetchOneAnime'
+import { connect } from 'react-redux'
+import '../stylesheets/universal.css'
 
-export default function AnimePageContainer() {
-    return (
-        <div>
-            this is the anime page container
-            <AnimePage />
-            <CommentForm />
-        </div>
-    )
+class AnimePageContainer extends React.Component {
+
+    componentDidMount() {
+        let id = this.props.match.params.id
+        this.props.fetchOneAnime(id)
+    }
+
+    render() {
+        return (
+            <div className="center-fit">
+                <AnimePage anime={this.props.anime} />
+                <CommentForm />
+            </div>
+        )
+    }
 }
 
-// should have a section for the anime
-// should have a container to hold reviews 
+const mapStateToProps = state => {
+    return({
+        anime: state.anime
+    })
+}
+
+export default connect(mapStateToProps, {fetchOneAnime} )(AnimePageContainer)

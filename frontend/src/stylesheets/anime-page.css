@@ -1,0 +1,60 @@
+.title {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(58, 95, 182)
+}
+
+.page-grid {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 200px;
+    padding-left: 200px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.page-font {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.tags {
+    font-size: 15px;
+    color: rgb(116, 58, 182)
+}
+
+.tags-title {
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(70, 29, 136)
+}
+
+.big-font {
+    color: rgb(18, 28, 119);
+    font-weight: bold;
+}
+
+.page-small-font {
+    color: rgb(58, 71, 182);
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+
+.page-summary {
+    max-width: 500px;
+}
+
+.cover {
+    height: 600px;
+    width: 460px;
+    border-radius: 25px;
+    box-shadow: 3px 4px 9px 6px #c9cbcf;
+}

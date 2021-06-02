@@ -12,9 +12,12 @@ export default class CommentForm extends Component {
         return (
             <form>
                 <label>Name:</label>
-                <input type="text" />
+                <input type="text" /> 
+                <br/><br/>
                 <label>Review:</label>
-                <input type="textarea"/>
+                <input type="text"/>
+                <br/><br/>
+                <input type="submit" value="Submit Review"/>
             </form>
         )
     }

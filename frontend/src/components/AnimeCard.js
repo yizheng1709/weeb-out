@@ -8,7 +8,7 @@ export default function AnimeCard(props) {
         <div className="flip-card center-fit">
             <div className="flip-card-inner">
                 <div className="flip-card-front">
-                    <img src={props.anime.cover} className="anime-card flip" ></img>
+                    <img src={props.anime.cover} className="anime-card flip" alt={props.anime.title}></img>
                 </div>
                 <div class="flip-card-back">
                     <div className="limit-text">
