@@ -20,7 +20,6 @@ class AnimeContainer extends Component {
 }
 
 const mapStateToProps = state => {
-    console.log("mapStateToProps")
     return({
         animes: state.animes
     })
