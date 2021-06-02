@@ -33,6 +33,10 @@ rails s
 
 On a separate terminal, cd to frontend, then run:
 ```
+npm install
+```
+
+```
 npm start
 ```
 
