@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../stylesheets/review-form.css'
 
 export default class CommentForm extends Component {
     constructor(){
@@ -10,7 +11,7 @@ export default class CommentForm extends Component {
     }
     render() {
         return (
-            <form>
+            <form className="center">
                 <label>Name:</label>
                 <input type="text" /> 
                 <br/><br/>

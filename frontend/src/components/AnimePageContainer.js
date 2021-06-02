@@ -1,6 +1,6 @@
 import React from 'react'
 import AnimePage from './AnimePage'
-import CommentForm from './CommentForm'
+import ReviewsContainer from './ReviewsContainer'
 import fetchOneAnime from '../actions/fetchOneAnime'
 import { connect } from 'react-redux'
 import '../stylesheets/universal.css'
@@ -16,7 +16,8 @@ class AnimePageContainer extends React.Component {
         return (
             <div className="center-fit">
                 <AnimePage anime={this.props.anime} />
-                <CommentForm />
+                <br/><br/>
+                <ReviewsContainer />
             </div>
         )
     }
