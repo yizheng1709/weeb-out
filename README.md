@@ -7,6 +7,10 @@ Let the anime community help by reading their reviews!
 
 ![Alt text](frontend/src/images/choosing.gif?raw=true "Home Page")
 
+Simply click on the anime card that appeals to you and then read the comments.
+
+![Alt text](frontend/src/images/first.gif?raw=true "Choosing Anime")
+
 ### Prerequisites & Installing
 
 First, clone this repo:
