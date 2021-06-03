@@ -3,6 +3,7 @@ import AnimePage from './AnimePage'
 import ReviewsContainer from './ReviewsContainer'
 import { connect } from 'react-redux'
 import '../stylesheets/universal.css'
+import { Redirect } from 'react-router'
 
 class AnimePageContainer extends React.Component {
 
@@ -14,12 +15,19 @@ class AnimePageContainer extends React.Component {
     render() {
 
         let anime = this.props.animes.find(anime => anime.id === parseInt(this.props.match.params.id))
+
+        if (!anime) {
+            debugger
+            this.props.history.push('/animes')
+            alert("Please allow the animes to load :)")
+        }
  
         return (
             <div className="center-fit">
                 <AnimePage anime={this.props.animes && anime} />
                 <br/><br/>
-                <ReviewsContainer comments={this.props.animes && anime.comments}/>
+                <ReviewsContainer comments={anime && anime.comments}/>
+                
             </div>
         )
     }
